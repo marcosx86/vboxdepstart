@@ -1,1 +1,2 @@
 * Write a better SystemD service unit
+* Add re-run option (no "restart") to start remaining VMs added after bootup
