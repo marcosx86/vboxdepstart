@@ -1,0 +1,12 @@
+[Unit]
+Description = VIRTUALBOX start/stop script
+After = networking.service vboxdrv.service ssh.service
+
+[Service]
+Type = simple
+ExecStart = /root/vboxdepstart.py
+TimeoutSec = 1200
+
+[Install]
+WantedBy = multi-user.target
+

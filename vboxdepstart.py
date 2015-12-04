@@ -8,8 +8,7 @@ if len(sys.argv) == 2 and sys.argv[1] == 'install':
 	cp.optionxform = str
 	cp.add_section('Unit')
 	cp.set('Unit', 'Description', 'VIRTUALBOX start/stop script');
-	cp.set('Unit', 'After', 'network.target ssh.service');
-	cp.set('Unit', 'Before', 'gdm.service');
+	cp.set('Unit', 'After', 'networking.service vboxdrv.service ssh.service');
 	cp.add_section('Service')
 	cp.set('Service', 'Type', 'simple');
 	cp.set('Service', 'ExecStart', '/root/vboxdepstart.py');
