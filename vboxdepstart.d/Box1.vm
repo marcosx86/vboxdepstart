@@ -1,0 +1,9 @@
+[vm]
+enabled = 1
+user = johndoe
+order = 1
+uuid = {aaaaaaaa-bbbb-cccc-dddd-eeeeeeeeeeee}
+startafter = 0
+finishtype = savestate
+finishwait = 0
+
